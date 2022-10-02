@@ -1,0 +1,23 @@
+{
+  "name": "sol-mod-2",
+  "version": "1.0.0",
+  "description": "\"My primera calificacion por mis compañeros\"",
+  "main": "index.html",
+  "scripts": {
+	"dev": "browsersync",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matias101010/sol-mod-2.git"
+  },
+  "author": "Matias ovejero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matias101010/sol-mod-2/issues"
+  },
+  "homepage": "https://github.com/matias101010/sol-mod-2#readme",
+  "dependencies": {
+    "browsersync": "^0.0.1-security"
+  }
+}
