@@ -1,103 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" conten="width=device-width , initial-scale=1">
-	<link rel="stylesheet" ref="css/style.css">
+	<meta name="viewport width=device-width , initial=skale,1">
+	<link rel="stylesheet" ref="style/style.css">
 	<style>
+    h1 {
+	color:lightpink;
+	text-align: center;
+	font-size: 40px;
+	font-family: Times,"Times New Roman",Georgia,serif;
+    font-weight: bolder;
+    text-transform:uppercase ;
+    font-style: italic;
+    }
     * {
     	box-sizing: border-box;
     }
+    
+    div.row  {
+    	border: 1px solid black;
+    	float: left;
+    	margin-left: auto;
+    	margin-right: auto;
 
-	.style{
-		font-family: Times,"Times New Roman",Georgia,serif;
-     	font-size:26 px;        
-        font-weight: bolder;
-        text-transform: lowercase;
-        font-style:italic;
+    }
 
-    }    
-	@media (min width: 992px) {
-		.col-lg-3 
+    @media (min-width: 992px) {
+    	.col-lg-3 {
+    		float: left;
+    		border: 1px solid black;
+    		width: 50%;
+    	}
+    }
 
+    @media (min-width: 768px) and (max width: 991px) {
+    	.col-md-12 {
+    		float: left;
+    		border: 1px solid black;
+    		width: 40%;
 
+    	}
+    }
 
-			
-	}
+    @media (min-width: ) and (min-width: ) {
+    	.col-sm-1{
+    		float: left;
+    		border: 1px solid black;
+    		width: 25%;
+    	}
+    }
+ 
+    
 
-	@media  (min width:768px ) and (max width: 991px) {
-		.col-md-3 
-			
-		} 
+    h3 {background-color: blanchedalmond;
+        color: darkred;
+        text-align: right;
+        height: 40px;
+        width: 50%;
+        margin-left: 100px;
+        margin-top: 0;
+        float: right;
+        padding: 10px;
+       
 
-
-	}
-    h1 {
-	color:indianred;
-	text-align: center;
     }
     
 
+    div { background-color: lightsalmon;
+       	opacity: .9;    
+       	color: black;
+    	
+    	font-size: 15px;
+		font-family: Times,"Times New Roman",Georgia,serif;
+    	font-weight: bolder;
+    	width: 50%;
 
-    h3{
-    	background-color: coral;
-    	color: palegoldenrod;
-    	text-align: right;
     	
-    	width: 60px;
-    	height: 60px;
+     	font-style: italic;
     	
-    	float: right;
-    	
-    	margin-right: 10px;
-    	border-width: 5px;
-    	
-    	border: 1px solid black;
-    	
-    	
-    	
-
-    }
-
-    p { 
-       
-     
-       background-color: paleturquoise;
-       
-       border: 1px solid black;
-       padding: 10px;
-       border-width: 5px;
-      
+    } 
+    p.bg {
     	
       
        
-
-
-
-      
-
-      
-
-    }
-    #bg {
-    	color: darkred;
-    	width: 80%;
-    	height: 300px;
+       
+       
+    	
     	    }
 
     p.go{
-    	color: darkred;
-    	width:  80%;
-    	height: 300px;
+    	
+       
+       
+    	
+    	
+
     	
     	
     	
     }
 
     p.ready{
-    	color: darkred;
-    	width:  90%;
-    	height: 300px;
+    
+       
+    	
     	
     	
     	}
@@ -116,20 +124,26 @@
 	
 	
 	<div class="row">
-	    <div class="col-lg-3 col-md-3" >	
+	    <div class="col-lg-3 col-md-12 col-sm-1" >	
 	   	  <h3>¡Nosotros¡</h3>
-		  <p id="bg">La peluqueria Kano lleva mas de 20 años de experiencia.Intentamos brindar el mejor servicio atencion y calidad-precio.Nuestra caracteristica principal nuestra variedad de cortes</p>
+	   	  <div>
+		  <p  class="bg">La peluqueria Kano lleva mas de 20 años de experiencia.Intentamos brindar el mejor servicio atencion y calidad-precio.Nuestra caracteristica principal nuestra variedad de cortes</p>
+		  </div>
 	    </div>
 
-		<div class="col-lg-3 col-md-3" >
+		<div class="col-lg-3 col-md-12 col-sm-1" >
 			<h3>"Kano"</h3>
+			<div>
 			<p class="go">La peluueria cuenta con 10 peluqueros de alto nivel que te haran ver como tu lo quieras,ofrecemos tintura,corte de pelo,barba. </p>
+			</div>
 				
 
 		</div>
-		<div class="col-lg-3 col-md-3" >
+		<div class="col-lg-3 col-md-12 col-sm-1" >
 			<h3>$Precios</h3>
+			<div>
 			<p class="ready">Los precios son los siguientes:corte$500,barba$200,tintura$1000.Horarios lunes a viernes de mañana 8 a 14 tarde 17 a 23,podes pagar en efectivo,tarjeta de credito o debito,mercado pago,nuestro contacto 2612334455</p>
+			</div>
 				
 		</div>
 	</div>				 
